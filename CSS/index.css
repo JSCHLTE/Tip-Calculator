@@ -1,0 +1,95 @@
+/*Jordan Schulte*/
+:root{
+    --black: #000;
+    --blue: hsl(211, 100%, 50%);
+    --grey-color: hsl(214, 7%, 19%);
+}
+/*Preset Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--black);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper{
+    color: white;
+    background: var(--grey-color);
+    border-radius: 20px;
+    width: min(85%, 600px);
+    cursor: default;
+    user-select: none;
+}
+.wrapper-title{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--black);
+    color: var(--blue);
+}
+.wrapper-content{
+    text-align: center;
+    padding: 20px;
+}
+.wrapper-content p{
+    margin: 20px 20px 0;
+    font-size: 16pt;
+}
+.wrapper-content input{
+    width: 15rem;
+    height: 2.5rem;
+    padding: 5px;
+    margin: 20px 10px;
+    border: 2px solid white;
+    font-size: 14pt;
+}
+.wrapper-content input:focus{
+    border-color: var(--blue);
+    outline: none;
+}
+.wrapper-button{
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid var(--black);
+}
+.wrapper-button button{
+    height: 40px;
+    width: 125px;
+    cursor: pointer;
+    margin: 0 10px;
+    background: white;
+    border: 2px solid white;
+    font-weight: bold;
+}
+.wrapper-button button:hover{
+    background: var(--blue);
+    border: var(--blue);
+    color: white;
+}
+.append-wrapper{
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    user-select: none;
+}
+.append-wrapper span{
+    color: var(--blue);
+}
+.watermark{
+    text-align: center;
+    color: white;
+    user-select: none;
+}
+.watermark a{
+    color: var(--blue);
+}
+.watermark a:hover{
+    text-decoration: none;
+}

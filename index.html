@@ -1,0 +1,41 @@
+<!--Jordan Schulte-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <title>Tip Calculator</title>
+    <!--FONTS-->
+
+    <!--SCRIPTS-->
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <p class="watermark">©️2021 <a href="https://jordandevelops.github.io">JordanDevelops</a></p>
+    <div class="append-wrapper">
+        <h2>Tip: <span id="appendTip"></span></h2>
+        <h2>Total (Tip Included): <span id="appendTotal"></span></h2>
+        <span id="appendPerson"></span>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper-title">
+            <h1>Tip Calculator</h1>
+        </div>
+        <div class="wrapper-content">
+            <p>How much was your bill?</p>
+            $<input type="number" id="billValue" placeholder="Bill Amount">
+            <p>How much do you want to tip?</p>
+            <input type="number" id="tipValue" placeholder="15">%
+            <p>How many people are splitting the bill?</p>
+            <input type="number" id="perPersonValue" placeholder="Number of People">
+        </div>
+        <div class="wrapper-button">
+            <button id="btnCalculate">Calculate</button>
+            <button id="btnClear">Clear</button>
+        </div>
+    </div>
+    <!--JAVASCRIPT-->
+    <script src="JavaScript/index.js"></script>
+</body>
+</html>
